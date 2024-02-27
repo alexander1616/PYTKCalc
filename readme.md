@@ -30,6 +30,7 @@ git clone https://github.com/alexander1616/PYTKCalc
 Run the calculator as an independent program:
 
 ```bash
+cd PYTKCalc
 python3 testCalculator.py
 ```
 ### Usage as a Module
