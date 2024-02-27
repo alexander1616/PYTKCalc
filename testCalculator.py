@@ -11,7 +11,7 @@ import sys
 import TKCalculator as TKC
 
 def testCalculator():
-    Calculator = TKC.CalculatorObj()
+    Calculator = TKC.CalculatorObj() #run as program itself
 
 def testCalculator_module():
     newFrame = tk.Tk()
