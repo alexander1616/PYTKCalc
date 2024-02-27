@@ -12,16 +12,22 @@ import sys
 from functools import partial
 
 class CalculatorObj:
-    def __init__(self, root):
+    def __init__(self, root=None):
         import StateMap
         self.StateObj = StateMap.StateMap()
         self.calculation = ""
         self.text_result = None
-        self.root = root
+        if root is None:
+            self.root = tk.Tk()
+        else:
+            self.root = root
         self.button_font = "Arial"
         self.button_fs = 14
         self.button_width = 5
         self.create_calculator()
+
+    def main_loop(self):
+        self.root.mainloop()
 
     def create_buttons(self):
         #button_list = [(row, col, key)]

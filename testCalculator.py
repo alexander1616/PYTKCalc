@@ -7,11 +7,20 @@
 ############################################
 
 import tkinter as tk
+import sys
+import TKCalculator as TKC
+
+def testCalculator():
+    Calculator = TKC.CalculatorObj()
+    Calculator.main_loop()
+
+def testCalculator_module():
+    newFrame = tk.Tk()
+    Calculator = TKC.CalculatorObj(newFrame)
+    newFrame.mainloop()
 
 if __name__ == "__main__":
-    # world starts here
-    newFrame = tk.Tk()
-    import Calc5
-    Calculator = Calc5.CalculatorObj(newFrame)
-    newFrame.mainloop()
+    
+    testCalculator()
+    #testCalculator_module()
     sys.exit(0)
