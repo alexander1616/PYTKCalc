@@ -12,7 +12,6 @@ import TKCalculator as TKC
 
 def testCalculator():
     Calculator = TKC.CalculatorObj()
-    Calculator.main_loop()
 
 def testCalculator_module():
     newFrame = tk.Tk()

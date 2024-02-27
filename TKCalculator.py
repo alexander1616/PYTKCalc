@@ -25,6 +25,10 @@ class CalculatorObj:
         self.button_fs = 14
         self.button_width = 5
         self.create_calculator()
+        
+        # run as standard function
+        if root is None:
+            self.main_loop()
 
     def main_loop(self):
         self.root.mainloop()
