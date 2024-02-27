@@ -11,6 +11,7 @@ import sys
 import TKCalculator as TKC
 
 def testCalculator():
+    # run this as stand alone
     Calculator = TKC.CalculatorObj()
 
 def testCalculator_module():
